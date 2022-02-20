@@ -60,12 +60,91 @@ const questions = [
         }
     }
 },
-]
 // Contribution Guidlines
-function writeToFile(fileName, data) {}
+{
+    type: 'input',
+    name: 'contribution',
+    message: 'How should people contribute to this project? (Required)',
+    validate: contributionInput => {
+        if (contributionInput) {
+            return true;
+        } else {
+            console.log('Provide information on how to contribute to the project!');
+            return false;
+        }
+    }
+},
+// Test Instructions
+{
+    type: 'input',
+    name: 'testing',
+    message: 'How do you test this project? (Required)',
+    validate: testingInput => {
+        if (testingInput) {
+            return true;
+        } else {
+            console.log('Describe how to test this project!');
+            return false;
+        }
+    }
+},
+// License options
+{
+    type: 'checkbox',
+    name: 'licensing',
+    message: 'Choose a license for your project (Required)',
+    choices: ['MIT', 'GPL-license', 'LGPL-license', 'MPL-2.0', 'BSD-3-Clause', 'CDDL-1.0', 'EPL-2.0', 'None'],
+    validate: licensingInput => {
+        if (licensingInput) {
+            return true;
+        } else {
+            console.log('Pick a license for the project!');
+        }
+    }
+},
+// Github Username
+{
+    type: 'input',
+    name: 'github',
+    message: 'Enter your GitHub username (Required)',
+    validate: githubInput => {
+        if (githubInput) {
+            return true;
+        } else {
+            console.log('Please enter your GitHub username!');
+            return false;
+        }
+    }
+},
+// Email Address
+{
+    type: 'input',
+    name: 'email',
+    message: 'Would you like to incluse your email?',
+  },
+];
+
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+            return console.log(err);
+        }
+        console.log('Your Markdown file has been created.')
+    });
+}
+
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+
+    inquirer.prompt(questions).then((answers) => {
+        writeToFile("README.md", generateMarkdown(answers)
+        );
+      });
+    }
+
+
 
 // Function call to initialize app
 init();
