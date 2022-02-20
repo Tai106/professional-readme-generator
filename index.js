@@ -60,6 +60,7 @@ const questions = [
         }
     }
 },
+]
 // Contribution Guidlines
 function writeToFile(fileName, data) {}
 
