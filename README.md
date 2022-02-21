@@ -1,29 +1,28 @@
-# work-day-scheduler
-  ## Table of Contents 
-  - [Description](#description)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contribution](#contribution)
-  - [Testing](#testing)
-  - [Additional Info](#additional-info)
-  ## Description:
-  A simple calendar application that allows a user to save events for each hour of the day. It runs in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+# professional-readme-generator
 
-  ## Installation:
-  none
+# Purpose
+This application was created to dynamically generate a professional README.md file from a user's input using the command line. Once the user provides the required information for
+each field, the application will create a a high-quality, professional README.md file generated with the title of the project, sections, entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions.
 
-  ## Usage:
-  input and save daily events 
+Javascript
+Node.js
 
-  ## License:
-  MIT
+# Test
+The application will be invoked by using the following command:
+node index
 
-  ## Contribution:
-  none
+#Installation
+Download the application through GitHub 
 
-  ## Testing:
-  none
+#Usage
+Open terminal
+Type 'node index.js'
+Answer each question
+On success a README.md will be generated.
 
-  ## Additional Info:
-  - Github: [Tai106](https://github.com/Tai106)
-  - Email: taivonedwards1@gmail.com 
+# Video Walkthrough
+https://drive.google.com/file/d/1d8ha4q0GiDBMaFB93rUUf2mAytL6AI8o/view
+
+# Contribution
+GitHub: Tai106
+Email: taivonedwards1@gmail.com
