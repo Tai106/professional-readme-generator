@@ -1,4 +1,4 @@
-# code-quiz
+# work-day-scheduler
   ## Table of Contents 
   - [Description](#description)
   - [Installation](#installation)
@@ -7,22 +7,22 @@
   - [Testing](#testing)
   - [Additional Info](#additional-info)
   ## Description:
-  A website that offers, coding boot camp students the opportunity to sharpen their skills by. taking a timed quiz on JavaScript fundamentals that stores high scores Inorder to gauge progress.
+  A simple calendar application that allows a user to save events for each hour of the day. It runs in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
   ## Installation:
-  The project was built with javascript, HTML, & CSS
+  none
 
   ## Usage:
-  this project intended use is for developers/aspiring developers to sharpen there skills by answering the given code realted questions 
+  input and save daily events 
 
   ## License:
   MIT
 
   ## Contribution:
-  people can contribute to this project by providing additional questions for vistors of the site 
+  none
 
   ## Testing:
-  by performing single user performance test
+  none
 
   ## Additional Info:
   - Github: [Tai106](https://github.com/Tai106)
