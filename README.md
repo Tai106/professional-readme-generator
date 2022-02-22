@@ -2,7 +2,7 @@
 
 # Purpose
 This application was created to dynamically generate a professional README.md file from a user's input using the command line. Once the user provides the required information for
-each field, the application will create a a high-quality, professional README.md file generated with the title of the project, sections, entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions.
+each field, the application will create a high-quality, professional README.md file generated with the title of the project, sections, entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions.
 
 Javascript
 Node.js
